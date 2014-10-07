@@ -1,0 +1,7 @@
+function checkCaptcha() {
+	$('img').forEach(function() {
+		if ($(this).attr('src').indexof('captcha/img.php') > -1) {
+			console.log('Er is er een!');		
+		}
+	});
+}

@@ -1,0 +1,43 @@
+{
+	"manifest_version": 2,
+
+	"name": "Bandias Bot",
+	"description": "An automated bot for Bandias.",
+	"version": "1.0",
+
+	"permissions": [
+		"http://www.bandias.nl/",
+		"tabs",
+		"notifications"
+	],
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	
+	"background": {
+		"scripts": [ 
+			"jquery.js",
+			"runnable.js"
+		]
+	},
+
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.bandias.nl/*"
+			],
+			"js": [ 
+				"jquery.js",
+				"resemble.js",
+				"general.js"
+			]
+		}
+  	],
+
+    "web_accessible_resources": [
+        "images/*",
+        "actions/*"
+    ]
+}

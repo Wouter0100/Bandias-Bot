@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>Bandias Bot - Popup</title>
+
+	<script src="jquery.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body>
+	<input type="text" /> <input type="button" value="Attack" /> <br/>
+	<br/>	
+	<input type="button" value="Open bandias bot tab" />
+</body>
+</html>

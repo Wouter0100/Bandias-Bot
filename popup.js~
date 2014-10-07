@@ -1,0 +1,7 @@
+var console = chrome.extension.getBackgroundPage().console;
+
+$(function() {
+	$('#open_bandias').on('click', function() {
+		chrome.runtime.sendMessage({ type: 'setBandiasId', tabId: tab.id });
+	});
+});
